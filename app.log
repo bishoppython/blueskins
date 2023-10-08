@@ -1,0 +1,1593 @@
+2023-10-08 13:27:23.541142: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from PILOT_app import *
+ModuleNotFoundError: No module named 'PILOT_app'
+
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:27:23.572392: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from PILOT_app import *
+ModuleNotFoundError: No module named 'PILOT_app'
+
+2023-10-08 13:27:23.603572: Running on_exit tasks
+2023-10-08 13:27:23.619181: wfastcgi.py 3.0.0 closed
+2023-10-08 13:29:03.906901: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_app import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_app.py", line 21, in <module>
+    auth = dash_auth.BasicAuth(app, VALID_USERNAME_PASSWORD_PAIRS)
+                               ^^^
+NameError: name 'app' is not defined
+
+
+StdOut: 
+
+StdErr: 
+2023-10-08 13:29:03.940006: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_app import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_app.py", line 21, in <module>
+    auth = dash_auth.BasicAuth(app, VALID_USERNAME_PASSWORD_PAIRS)
+                               ^^^
+NameError: name 'app' is not defined
+2023-10-08 13:29:03.956603: Running on_exit tasks
+2023-10-08 13:29:03.973450: wfastcgi.py 3.0.0 closed
+2023-10-08 13:29:18.673254: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from PILOT_app import *
+ModuleNotFoundError: No module named 'PILOT_app'
+
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:29:18.697330: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from PILOT_app import *
+ModuleNotFoundError: No module named 'PILOT_app'
+
+2023-10-08 13:29:18.706607: Running on_exit tasks
+2023-10-08 13:29:18.735584: wfastcgi.py 3.0.0 closed
+2023-10-08 13:29:20.851112: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from PILOT_app import *
+ModuleNotFoundError: No module named 'PILOT_app'
+
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:29:20.866771: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from PILOT_app import *
+ModuleNotFoundError: No module named 'PILOT_app'
+
+2023-10-08 13:29:20.892400: Running on_exit tasks
+2023-10-08 13:29:20.898418: wfastcgi.py 3.0.0 closed
+2023-10-08 13:29:30.274493: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from PILOT_app import *
+ModuleNotFoundError: No module named 'PILOT_app'
+
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:29:30.300458: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from PILOT_app import *
+ModuleNotFoundError: No module named 'PILOT_app'
+
+2023-10-08 13:29:30.322906: Running on_exit tasks
+2023-10-08 13:29:30.353181: wfastcgi.py 3.0.0 closed
+2023-10-08 13:29:31.152291: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from PILOT_app import *
+ModuleNotFoundError: No module named 'PILOT_app'
+
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:29:31.183545: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from PILOT_app import *
+ModuleNotFoundError: No module named 'PILOT_app'
+
+2023-10-08 13:29:31.199166: Running on_exit tasks
+2023-10-08 13:29:31.222820: wfastcgi.py 3.0.0 closed
+2023-10-08 13:29:31.328163: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from PILOT_app import *
+ModuleNotFoundError: No module named 'PILOT_app'
+
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:29:31.372464: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from PILOT_app import *
+ModuleNotFoundError: No module named 'PILOT_app'
+
+2023-10-08 13:29:31.411011: Running on_exit tasks
+2023-10-08 13:29:31.434909: wfastcgi.py 3.0.0 closed
+2023-10-08 13:29:38.300562: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from PILOT_app import *
+ModuleNotFoundError: No module named 'PILOT_app'
+
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:29:38.382994: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from PILOT_app import *
+ModuleNotFoundError: No module named 'PILOT_app'
+
+2023-10-08 13:29:38.419227: Running on_exit tasks
+2023-10-08 13:29:38.455985: wfastcgi.py 3.0.0 closed
+2023-10-08 13:30:47.639678: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from elevacao.PILOT_app import *
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_app.py", line 21, in <module>
+    auth = dash_auth.BasicAuth(app, VALID_USERNAME_PASSWORD_PAIRS)
+                               ^^^
+NameError: name 'app' is not defined
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:30:47.707620: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from elevacao.PILOT_app import *
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_app.py", line 21, in <module>
+    auth = dash_auth.BasicAuth(app, VALID_USERNAME_PASSWORD_PAIRS)
+                               ^^^
+NameError: name 'app' is not defined
+2023-10-08 13:30:47.737619: Running on_exit tasks
+2023-10-08 13:30:47.773743: wfastcgi.py 3.0.0 closed
+2023-10-08 13:32:07.617283: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 12, in <module>
+    from PILOT_sql import *
+ModuleNotFoundError: No module named 'PILOT_sql'
+
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:32:07.701192: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 12, in <module>
+    from PILOT_sql import *
+ModuleNotFoundError: No module named 'PILOT_sql'
+
+2023-10-08 13:32:07.766346: Running on_exit tasks
+2023-10-08 13:32:07.799145: wfastcgi.py 3.0.0 closed
+2023-10-08 13:32:44.998994: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 13, in <module>
+    from sql_2 import *
+ModuleNotFoundError: No module named 'sql_2'
+
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:32:45.072197: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 13, in <module>
+    from sql_2 import *
+ModuleNotFoundError: No module named 'sql_2'
+
+2023-10-08 13:32:45.111140: Running on_exit tasks
+2023-10-08 13:32:45.147371: wfastcgi.py 3.0.0 closed
+2023-10-08 13:35:25.548078: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 29, in <module>
+    app.title = 'Calculo Matriz'
+    ^^^
+NameError: name 'app' is not defined
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:35:25.609579: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 29, in <module>
+    app.title = 'Calculo Matriz'
+    ^^^
+NameError: name 'app' is not defined
+2023-10-08 13:35:25.640552: Running on_exit tasks
+2023-10-08 13:35:25.672384: wfastcgi.py 3.0.0 closed
+2023-10-08 13:36:10.124163: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from elevacao.PILOT_pilot import *
+ModuleNotFoundError: No module named 'elevacao.PILOT_pilot'
+
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:36:10.186411: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 616, in get_wsgi_handler
+    raise ValueError('"%s" could not be imported%s' % (handler_name, last_tb))
+ValueError: "router.app" could not be imported: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from elevacao.PILOT_pilot import *
+ModuleNotFoundError: No module named 'elevacao.PILOT_pilot'
+
+2023-10-08 13:36:10.220201: Running on_exit tasks
+2023-10-08 13:36:10.267078: wfastcgi.py 3.0.0 closed
+2023-10-08 13:36:46.205980: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 30, in <module>
+    pilot.index_string = '''
+    ^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\dash\dash.py", line 712, in index_string
+    _validate.validate_index("index string", checks, value)
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\dash\_validate.py", line 387, in validate_index
+    raise exceptions.InvalidIndexException(
+dash.exceptions.InvalidIndexException: Missing item {%app_entry%} in index string.
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:36:46.261842: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 30, in <module>
+    pilot.index_string = '''
+    ^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\dash\dash.py", line 712, in index_string
+    _validate.validate_index("index string", checks, value)
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\dash\_validate.py", line 387, in validate_index
+    raise exceptions.InvalidIndexException(
+dash.exceptions.InvalidIndexException: Missing item {%app_entry%} in index string.
+2023-10-08 13:36:46.306200: Running on_exit tasks
+2023-10-08 13:36:46.336036: wfastcgi.py 3.0.0 closed
+2023-10-08 13:38:17.039567: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 30, in <module>
+    pilot.index_string = '''
+    ^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\dash\dash.py", line 712, in index_string
+    _validate.validate_index("index string", checks, value)
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\dash\_validate.py", line 387, in validate_index
+    raise exceptions.InvalidIndexException(
+dash.exceptions.InvalidIndexException: Missing item {%app_entry%} in index string.
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:38:17.102962: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 30, in <module>
+    pilot.index_string = '''
+    ^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\dash\dash.py", line 712, in index_string
+    _validate.validate_index("index string", checks, value)
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\dash\_validate.py", line 387, in validate_index
+    raise exceptions.InvalidIndexException(
+dash.exceptions.InvalidIndexException: Missing item {%app_entry%} in index string.
+2023-10-08 13:38:17.144645: Running on_exit tasks
+2023-10-08 13:38:17.181547: wfastcgi.py 3.0.0 closed
+2023-10-08 13:38:47.444885: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 30, in <module>
+    app.index_string = '''
+    ^^^
+NameError: name 'app' is not defined
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:38:47.513708: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 30, in <module>
+    app.index_string = '''
+    ^^^
+NameError: name 'app' is not defined
+2023-10-08 13:38:47.545444: Running on_exit tasks
+2023-10-08 13:38:47.592318: wfastcgi.py 3.0.0 closed
+2023-10-08 13:41:00.914909: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from elevacao.PILOT_app import *
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_app.py", line 18, in <module>
+    pilot = dash.Dash(__name__, external_stylesheets= [dbc.themes.CERULEAN],server=server,suppress_callback_exceptions=True, requests_pathname_prefix='/elevacao/')
+                                                                                   ^^^^^^
+NameError: name 'server' is not defined
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:41:00.999695: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 11, in <module>
+    from elevacao.PILOT_app import *
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_app.py", line 18, in <module>
+    pilot = dash.Dash(__name__, external_stylesheets= [dbc.themes.CERULEAN],server=server,suppress_callback_exceptions=True, requests_pathname_prefix='/elevacao/')
+                                                                                   ^^^^^^
+NameError: name 'server' is not defined
+2023-10-08 13:41:01.064864: Running on_exit tasks
+2023-10-08 13:41:01.101986: wfastcgi.py 3.0.0 closed
+2023-10-08 13:41:14.503046: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 30, in <module>
+    pilot.index_string = '''
+    ^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\dash\dash.py", line 712, in index_string
+    _validate.validate_index("index string", checks, value)
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\dash\_validate.py", line 387, in validate_index
+    raise exceptions.InvalidIndexException(
+dash.exceptions.InvalidIndexException: Missing item {%app_entry%} in index string.
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:41:14.557007: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 30, in <module>
+    pilot.index_string = '''
+    ^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\dash\dash.py", line 712, in index_string
+    _validate.validate_index("index string", checks, value)
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\dash\_validate.py", line 387, in validate_index
+    raise exceptions.InvalidIndexException(
+dash.exceptions.InvalidIndexException: Missing item {%app_entry%} in index string.
+2023-10-08 13:41:14.624211: Running on_exit tasks
+2023-10-08 13:41:14.657547: wfastcgi.py 3.0.0 closed
+2023-10-08 13:43:35.262025: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:43:35.281967: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+2023-10-08 13:43:35.320860: Running on_exit tasks
+2023-10-08 13:43:35.344623: wfastcgi.py 3.0.0 closed
+2023-10-08 13:44:04.702797: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:44:04.802736: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+2023-10-08 13:44:04.868953: Running on_exit tasks
+2023-10-08 13:44:04.918756: wfastcgi.py 3.0.0 closed
+2023-10-08 13:44:15.032017: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:44:15.118071: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+2023-10-08 13:44:15.169949: Running on_exit tasks
+2023-10-08 13:44:15.206901: wfastcgi.py 3.0.0 closed
+2023-10-08 13:47:15.356138: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:47:15.482008: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+2023-10-08 13:47:15.518961: Running on_exit tasks
+2023-10-08 13:47:15.556839: wfastcgi.py 3.0.0 closed
+2023-10-08 13:47:55.189343: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:47:55.238241: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+2023-10-08 13:47:55.306027: Running on_exit tasks
+2023-10-08 13:47:55.356233: wfastcgi.py 3.0.0 closed
+2023-10-08 13:57:45.160819: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:57:45.312654: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+2023-10-08 13:57:45.389245: Running on_exit tasks
+2023-10-08 13:57:45.617653: wfastcgi.py 3.0.0 closed
+2023-10-08 13:57:59.581665: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:57:59.635068: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\router.py", line 2, in <module>
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+2023-10-08 13:57:59.773583: Running on_exit tasks
+2023-10-08 13:57:59.888909: wfastcgi.py 3.0.0 closed
+2023-10-08 13:58:33.830266: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\index.py", line 3, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:58:33.873648: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\index.py", line 3, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+2023-10-08 13:58:33.921168: Running on_exit tasks
+2023-10-08 13:58:33.971379: wfastcgi.py 3.0.0 closed
+2023-10-08 13:59:02.084549: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\index.py", line 3, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:59:02.411295: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\index.py", line 3, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+2023-10-08 13:59:02.475968: Running on_exit tasks
+2023-10-08 13:59:02.554607: wfastcgi.py 3.0.0 closed
+2023-10-08 13:59:51.598199: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\index.py", line 3, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 13:59:51.680878: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\index.py", line 3, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+2023-10-08 13:59:51.747711: Running on_exit tasks
+2023-10-08 13:59:51.771539: wfastcgi.py 3.0.0 closed
+2023-10-08 14:04:51.600949: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\index.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 14:04:51.685396: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\index.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Driver='{ODBC Driver 17 for SQL Server}',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erro ao Localizar Servidor/Instância Especificado [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]O tempo limite do logon expirou (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Erro relatado pela rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não está acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. Para obter mais informações, consulte os Manuais Online do SQL Server. (-1)')
+2023-10-08 14:04:51.799571: Running on_exit tasks
+2023-10-08 14:04:51.875037: wfastcgi.py 3.0.0 closed
+2023-10-08 14:12:56.258827: Error occurred while reading WSGI handler:
+
+Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\index.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Trusted_Connection='Yes',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Falha de logon do usuário \'IIS APPPOOL\\azul_inteligence\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Não é possível abrir o banco de dados "DWINTELIGENCIA" solicitado pelo logon. Falha de logon. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Falha de logon do usuário \'IIS APPPOOL\\azul_inteligence\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Não é possível abrir o banco de dados "DWINTELIGENCIA" solicitado pelo logon. Falha de logon. (4060)')
+
+
+StdOut: 
+
+StdErr: C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py:9: UserWarning: 
+The dash_table package is deprecated. Please replace
+`import dash_table` with `from dash import dash_table`
+
+Also, if you're using any of the table format helpers (e.g. Group), replace 
+`from dash_table.Format import Group` with 
+`from dash.dash_table.Format import Group`
+  from dash_table import DataTable
+2023-10-08 14:12:56.336943: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 791, in main
+    env, handler = read_wsgi_handler(response.physical_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 633, in read_wsgi_handler
+    handler = get_wsgi_handler(os.getenv("WSGI_HANDLER"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\env\Lib\site-packages\wfastcgi.py", line 600, in get_wsgi_handler
+    handler = __import__(module_name, fromlist=[name_list[0][0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\index.py", line 2, in <module>
+    from elevacao.PILOT_index import elevacao
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_index.py", line 50, in <module>
+    perfile = seacher_banco_sql()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\inetpub\wwwroot\AZUL_INTELIGENCE\elevacao\PILOT_sql.py", line 6, in seacher_banco_sql
+    conn = pyodbc.connect(Trusted_Connection='Yes',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Falha de logon do usuário \'IIS APPPOOL\\azul_inteligence\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Não é possível abrir o banco de dados "DWINTELIGENCIA" solicitado pelo logon. Falha de logon. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Falha de logon do usuário \'IIS APPPOOL\\azul_inteligence\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Não é possível abrir o banco de dados "DWINTELIGENCIA" solicitado pelo logon. Falha de logon. (4060)')
+2023-10-08 14:12:56.383815: Running on_exit tasks
+2023-10-08 14:12:56.430687: wfastcgi.py 3.0.0 closed

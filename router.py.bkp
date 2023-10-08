@@ -1,0 +1,13 @@
+from werkzeug.middleware.dispatcher import DispatcherMiddleware
+from elevacao.PILOT_index import elevacao
+from calendarcco.CCO_index import calendarcco
+from flask import Flask
+
+#unused base app
+base_app = Flask(__name__)
+
+app = DispatcherMiddleware(base_app, {
+    '/elevacao': pilot.server,
+    '/calendarcco':  calendarcco.server,
+})
+
